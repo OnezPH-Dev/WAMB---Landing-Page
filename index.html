@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WamB - Tech Solution</title>
+
+    <!-- ========== CSS link ========== -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ========== Icon link ========== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!-- ========== Tab Logo ========== -->
+    <link rel="Icon" href="asset/logo/tab logo.png">
+</head>
+<body>
+    <div class="fheader">
+        <div class="fhwrap">
+            <div class="fh-pes-con">
+                <div>
+                    <i class='bx bxs-phone'></i>
+                    <span>Phone: +123 456 7890</span>
+                </div>
+                <div>
+                    <i class='bx bxs-envelope'></i>
+                    <span>Email: WamB.techsolution@gmail.com</span>
+                </div>
+                <div>
+                    <i class='bx bxs-time' ></i>
+                    <span>Hours: Monday-Friday: 8am - 7pm</span>
+                </div>
+            </div>
+            <div class="fh-si-lang-con">
+                <div>
+                    <a href="#">
+                        <i class='bx bxl-facebook' ></i>
+                    </a>
+                    <a href="#">
+                        <i class='bx bxl-instagram-alt'></i>
+                    </a>
+                    <a href="#">
+                        <i class='bx bxl-twitter' ></i>
+                    </a>
+                    <a href="#">
+                        <i class='bx bxl-github' ></i>
+                    </a>
+                    <a href="#">
+                        <i class='bx bxl-linkedin' ></i>
+                    </a>
+                </div>
+                <select class="lang" name="language">
+                    <option value="English">English</option>
+                    <option value="Tagalog">Tagalog</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="sheader">
+        <div class="shwrap">
+            <a href="index.html" class="logo-con">
+                <img src="asset/logo/tab logo.png" alt="Logo">
+                <h1>Wam<span>B</span></h1>
+            </a>
+            <input type="checkbox" id="hamburgerMenuCheckBox">
+            <label for="hamburgerMenuCheckBox" class="btntoggleManu">
+                <div id="burger1line"></div>
+                <div id="burger2line"></div>
+                <div id="burger3line"></div>
+            </label>
+            <div class="nav-con" id="navconwrapresponsive">
+                <h2 class="menu-label-nav">Menu</h2>
+                <nav>
+                    <ul>
+                        <li id="home-li">
+                            <a id="home-active" href="#">Home</a>
+                        </li>
+                        <li id="about-li">
+                            <a id="about-active" href="#about"  >About Us</a>
+                        </li>
+                        <li id="services-li">
+                            <a id="services-active" href="#services">Services</a>
+                        </li>
+                        <li>
+                            <span onclick="btnDrop()">IT Solution</span>
+                            <ul id="dropDown">
+                                <li>
+                                    <a href="#">Application Solutions</a>
+                                </li>
+                                <li>
+                                    <a href="#">Software Solutions</a>
+                                </li>
+                                <li>
+                                    <a href="#">Web Solution</a>
+                                </li>
+                                <li>
+                                    <a href="#">Web Application Solutions</a>
+                                </li>
+                                <li>
+                                    <a href="#">Hardware Solutions</a>
+                                </li>
+                                <li>
+                                    <a href="#">Troubleshoot</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="successstories-li">
+                            <a id="successstories-active" href="#successStories">Success Stories</a>
+                        </li>
+                        <li id="contact-li">
+                            <a id="contact-active" href="#contact">Contact Us</a>
+                        </li>
+                    </ul>
+                    <button onclick="requestSolutions()">Request Solutions</button>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== Section 1 ========== -->
+    <div id="particles-js" class="fsec reveal">
+        <div class="fsWrap">
+           <div class="fstext">
+            <h1>Easy Solution For <span>IT Problems!</span></h1>
+            <p>Do you frequently encounter hardware or software issues with your devices? If that's the case, WAMB is ready to assist you and offers services around-the-clock. We provide technology solutions for issues with software such as lost passwords, unintentionally deleting crucial information, sluggish device operation, overheating, blue screens, slow internet connection, USB issues, and many more.</p>
+            <div class="fsbtn">
+                <button onclick="getSolutions()">Get Solutions</button>
+                <button>Our Services</button>
+            </div>
+           </div>
+        </div>
+    </div>
+
+    <!-- ========== Section 2 ========== -->
+    <div class="ssec reveal" id="about">
+        <div class="ssWrap">
+            <div id="sstxt" class="ssText-con">
+                <h3>Trusted By The World's Best Organizations</h3>
+                <h1>Our technology allows you to offer latest software to your possible customers!</h1>
+                <p>Our aim is to completely satisfy all of our customers and go above and beyond their expectations in terms of value and quality. With our innovative approach to technology management and consulting solutions, WamB has been assisting enterprises all over the world manage their information technology.</p>
+                <button>More About Us</button>
+            </div>
+            <div id="ssimage" class="ssPic-con">
+                <img src="asset/p2.jfif" alt="Image">
+                <div class="ssRec"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== Section 3 ========== -->
+    <div class="tsec reveal" id="services">
+        <div class="tsWrap">
+            <div id="tsh"class="tsheader">
+                <h5><i class='bx bx-check'></i>The Best</h5>
+                <h1>Our Services</h1>
+                <div class="tsheadertextbtn">
+                    <p>WAMB is ready to assist you and offers services around-the-clock. We provide technology solutions for issues with software such as lost passwords, unintentionally deleting crucial information, sluggish device operation, overheating, blue screens, slow internet connection, USB issues, and many more.</p>
+                    <button onclick="checkAllServices()">Check all services</button>
+                </div>
+            </div>
+            <div id="tscontent" class="tscontentcon">
+                <div class="tscon">
+                    <img src="asset/solution vector pic/app-solution.svg" alt="Picture">
+                    <h3>Application Solution</h3>
+                    <p>You use the Solutions application to create and manage solution records within a Service Desk environment. It is the administrative application and is separate from the Search Solutions application that customers use to find solutions. A solution is a predefined response to a commonly asked question or problem.</p>
+                    <div class="tsbtn-projects-readmore">
+                        <button onclick="viewProjects()">View Projects</button>
+                        <button>Read more</button>
+                    </div>
+                </div>
+                <div class="tscon">
+                    <img src="asset/solution vector pic/software-solution.svg" alt="Picture">
+                    <h3>Software Solution</h3>
+                    <p>A software solution is a program that will perform all the time-consuming tasks and automate regular task catering you ease. Development of custom software is a process of designing software applications that meet the specific needs of an individual or a company.</p>
+                    <div class="tsbtn-projects-readmore">
+                        <button onclick="viewProjects()">View Projects</button>
+                        <button>Read more</button>
+                    </div>
+                </div>
+                <div class="tscon">
+                    <img src="asset/solution vector pic/web-solution.svg" alt="Picture">
+                    <h3>Web Solution</h3>
+                    <p>A web solution is basically anything that helps your company's online presence. It could be online marketing, website design, Pay-Per-Click management, Search Engine Optimization, etc. There are many different types of web solutions that Direct Business Marketing can help you with.</p>
+                    <div class="tsbtn-projects-readmore">
+                        <button onclick="viewProjects()">View Projects</button>
+                        <button>Read more</button>
+                    </div>
+                </div>
+                <div class="tscon">
+                    <img src="asset/solution vector pic/os-solution.svg" alt="Picture">
+                    <h3>OS Solution</h3>
+                    <p>An operating system (OS) is the programme that controls all other application programmes in a computer after being installed into the system first by a boot programme. The application programmes seek services from the operating system (API) through a specified application programme interface.</p>
+                    <div class="tsbtn-projects-readmore">
+                        <button onclick="viewProjects()">View Projects</button>
+                        <button>Read more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== Section 4 ========== -->
+    <div class="f2sec reveal" id="successStories">
+        <div id="f2secReveal" class="f2sWrap">
+            <h4>Latest Case Studies</h4>
+            <h1>Success Stories</h1>
+            <div class="f2scon">
+                <div class="f2scon-wrap">
+                    <img src="asset/soccess stories pic/content management system.jpg" alt="Picture">
+                    <h3>Content Management System</h3>
+                    <a href="#">Software Solutions</a>
+                </div>
+                <div class="f2scon-wrap">
+                    <img src="asset/soccess stories pic/banking application.jpg" alt="Picture">
+                    <h3>Banking Application</h3>
+                    <a href="#">Application Solutions</a>
+                </div>
+                <div class="f2scon-wrap">
+                    <img src="asset/soccess stories pic/dashboard system.jpg" alt="Picture">
+                    <h3>Dashboard System</h3>
+                    <a href="#">Software Solutions</a>
+                </div>
+                <div class="f2scon-wrap">
+                    <img src="asset/soccess stories pic/electronic management system.jpg" alt="Picture">
+                    <h3>Electronic Management System</h3>
+                    <a href="#">Software Solutions</a>
+                </div>
+                <div class="f2scon-wrap">
+                    <img src="asset/soccess stories pic/ui-ux.jpg" alt="Picture">
+                    <h3>UI&UX Web</h3>
+                    <a href="#">Web Solutions</a>
+                </div>
+                <div class="f2scon-wrap">
+                    <img src="asset/soccess stories pic/product inventory.jpg" alt="Picture">
+                    <h3>Product Inventory</h3>
+                    <a href="#">Web Solutions</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== Section 5 ========== -->
+    <div class="f3sec reveal">
+        <div class="f3sWrap">
+            <div id="f3sh" class="f3sheader">
+                <h5><i class='bx bx-check'></i>The Best</h5>
+                <h1>Testimonials</h1>
+                <div class="f3sheadertextbtn">
+                    <p>WAMB is ready to assist you and offers services around-the-clock. We provide technology solutions for issues with software such as lost passwords, unintentionally deleting crucial information, sluggish device operation, overheating, blue screens, slow internet connection, USB issues, and many more.</p>
+                    <button onclick="checkAllServices()">Check all reviews</button>
+                </div>
+            </div>
+            <div id="f3scontent" class="f3scon">
+                <div class="f3sR">
+                    <p>Although they are a new firm and still they are working on several things that would be extremely useful, they have a wonderful sense of urgency and utilize their own tool!</p>
+                    <div class="f3sprofile">
+                        <img src="asset/reviews profile/pro01.jpg" alt="Profile">
+                        <div class="f3stext">
+                            <h3>Jeff Westcott.</h3>
+                            <span>Web Developer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="f3sR">
+                    <p>I have been encouraging everyone who has trouble using technology to go to the Wamb website so they can take advantage of its extensive capabilities.</p>
+                    <div class="f3sprofile">
+                        <img src="asset/reviews profile/pro2.jpg" alt="Profile">
+                        <div class="f3stext">
+                            <h3>Jenny Kim</h3>
+                            <span>UI & UX Designer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="f3sR">
+                    <p>I have been recommending to everyone who struggles with technology to visit the Wamb website because I want them to take experience their vast features.</p>
+                    <div class="f3sprofile">
+                        <img src="asset/reviews profile/pro3.jpg" alt="Profile">
+                        <div class="f3stext">
+                            <h3>Kyle Ortega</h3>
+                            <span>Web Developer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== Section 6 ========== -->
+    <div class="s2sec reveal">
+        <div class="s2sWrap">
+            <h1 id="headerSec6">WamB Team</h1>
+            <div id="s2secTeam" class="s2scon">
+                <div class="s2scon-team">
+                    <div class="img-con">
+                        <img src="asset/team image/t1.jpg" alt="Image">
+                    </div>
+                    <div class="s2scon-text">
+                        <h4>Wilzen Carl R. Tolentino</h4>
+                        <span>Web Developer</span>
+                    </div>
+                    <div class="social-media-team">
+                        <a href="#">
+                            <i class='bx bxl-facebook'></i>
+                        </a>
+                        <a href="#">
+                            <i class='bx bxl-twitter' ></i>
+                        </a>
+                        <a href="#">
+                            <i class='bx bxl-linkedin' ></i>
+                        </a>
+                        <a href="#">
+                            <i class='bx bxl-github' ></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="s2scon-team">
+                    <div class="img-con">
+                        <img src="asset/team image/t2.jpg" alt="Image">
+                    </div>
+                    <div class="s2scon-text">
+                        <h4>Alfred L. Miranda</h4>
+                        <span>Web Developer</span>
+                    </div>
+                    <div class="social-media-team">
+                        <a href="#">
+                            <i class='bx bxl-facebook'></i>
+                        </a>
+                        <a href="#">
+                            <i class='bx bxl-twitter' ></i>
+                        </a>
+                        <a href="#">
+                            <i class='bx bxl-linkedin' ></i>
+                        </a>
+                        <a href="#">
+                            <i class='bx bxl-github' ></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="s2scon-team">
+                    <div class="img-con">
+                        <img src="asset/team image/t3.jpg" alt="Image">
+                    </div>
+                    <div class="s2scon-text">
+                        <h4>Mark Joseph S. Gaspar</h4>
+                        <span>Project Manager</span>
+                    </div>
+                    <div class="social-media-team">
+                        <a href="#">
+                            <i class='bx bxl-facebook'></i>
+                        </a>
+                        <a href="#">
+                            <i class='bx bxl-twitter' ></i>
+                        </a>
+                        <a href="#">
+                            <i class='bx bxl-linkedin' ></i>
+                        </a>
+                        <a href="#">
+                            <i class='bx bxl-github' ></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="s2scon-team">
+                    <div class="img-con">
+                        <img src="asset/team image/t4.jpg" alt="Image">
+                    </div>
+                    <div class="s2scon-text">
+                        <h4>Bernadeth C. Canimo</h4>
+                        <span>UI&UX Designer</span>
+                    </div>
+                    <div class="social-media-team">
+                        <a href="#">
+                            <i class='bx bxl-facebook'></i>
+                        </a>
+                        <a href="#">
+                            <i class='bx bxl-twitter' ></i>
+                        </a>
+                        <a href="#">
+                            <i class='bx bxl-linkedin' ></i>
+                        </a>
+                        <a href="#">
+                            <i class='bx bxl-github' ></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ========== Section 7 ========== -->
+    <div class="section7 reveal">
+        <div class="section7Wrap">
+            <h1>Get in touch</h1>
+            <div class="dection7-grid">
+                <div class="section7-L">
+                    <div class="sec7-lWrap">
+                        <h3>Leave us a message</h3>
+                        <form action="">
+                            <div class="sec7input-field-con">
+                                <input placeholder="Name" id="name" type="text" required>
+                                <input placeholder="Email" id="email" type="email" name="Email" required>
+                            </div>
+                            <div class="sec7input-field-con">
+                                <input placeholder="Number (Optional)" id="name" type="number">
+                                <input placeholder="Gender (Optional)" id="email" type="email" name="Email">
+                            </div>
+                            <div class="teat-area-con">
+                                <textarea placeholder="Message" name="message" id="" required></textarea>
+                            </div>
+                            <input type="submit">
+                        </form>
+                    </div>
+                </div>
+                <div class="section7-R" id="contact">
+                    <div class="sec7-RWrap">
+                        <h3><i class='bx bxs-phone' ></i>Phone: +123 456 7890</h3>
+                        <h3><i class='bx bxs-envelope' ></i>Email: WamB.techsolution@gmail.com</h3>
+                        <h3><i class='bx bxs-time' ></i>Hours: Monday-Friday: 8am - 7pm</h3>
+                        <h3><i class='bx bxs-map' ></i>San Luis Pampanga</h3>
+                        <img src="asset/map.png" alt="Mapa">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== Section 8 ========== -->
+    <footer>
+        <div class="footerWrap">
+            <div class="footer-logo-nav-con">
+                <div class="logo-social-media-icon-some-about">
+                    <img src="asset/logo/footer logo.png" alt="Logo">
+                    <p>Our aim is to completely satisfy all of our customers and go above and beyond their expectations in terms of value and quality.</p>
+                    <div class="footer-sm-con">
+                        <a href="#"><i class='bx bxl-facebook'></i></a>
+                        <a href="#"><i class='bx bxl-twitter' ></i></a>
+                        <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+                        <a href="#"><i class='bx bxl-github' ></i></a>
+                    </div>
+                </div>
+                <div class="footer-nav">
+                    <div class="foooter-nav-wrap">
+                        <h2>Menu</h2>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Success Stories</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </div>
+                </div>
+                <div class="footer-it-solution-menu">
+                    <div class="footer-it-solution-wrap">
+                        <h2>IT Solutions</h2>
+                        <li><a href="#">Application Solutions</a></li>
+                        <li><a href="#">Software Solutions</a></li>
+                        <li><a href="#">Web Solutions</a></li>
+                        <li><a href="#">Web Application Solutions</a></li>
+                        <li><a href="#">Hardware Solutions</a></li>
+                        <li><a href="#">Troubleshoot</a></li>
+                    </div>
+                </div>
+                <div class="reachme-wamb-con">
+                    <div class="reachme-wamb-wrap">
+                        <div>
+                            <h3><i class='bx bxs-phone' ></i>Phone</h3>
+                            <span>+123 456 7890</span>
+                        </div>
+                        <div>
+                            <h3><i class='bx bxs-envelope' ></i>Email</h3>
+                            <span>WamB.techsolution@gmail.com</span>
+                        </div>
+                        <div>
+                            <h3><i class='bx bxs-time' ></i>Hours</h3>
+                            <span>Monday-Friday: 8am - 7pm</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tearmsandcondition-copyrights">
+                <div class="terms-con">
+                    <a href="#">Terms</a>
+                    <span>And</span>
+                    <a href="#">Conditions</a>
+                    <br>
+                    <span>All Rights Reserved © 2022 WamB - Tech Solution</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
